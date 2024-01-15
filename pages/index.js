@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import atm_abi from "../artifacts/contracts/Assessment.sol/Assessment.json";
-//import atmImage from '../pages/';
+
 
 export default function HomePage() {
   const [ethWallet, setEthWallet] = useState(undefined);
@@ -141,15 +141,12 @@ export default function HomePage() {
     <main className="container">
       <header>
         <div className="a">
-          <h1>Welcome to the Safe ATM!</h1>
+          <h1>Welcome to ATM</h1>
         </div>
       </header>
       <div>
         <div style={{ textAlign: "center", fontSize: "30px" }}>
-          <p>
-            Welcome to safe Atm. Here you can withdraw, deposit and send funds
-            to any adress of your choice!!
-          </p>
+         
           <p style={{ color: "green" }}>Happy Transaction!</p>
           <div
             style={{
@@ -158,18 +155,14 @@ export default function HomePage() {
               marginBottom: "35px",
             }}
           >
-            <img
-              src="https://play-lh.googleusercontent.com/HDvcBYx8o2RqTeviL40N_HyP-ccg68LH9Sa1MN_sEkxI8cOKwRYWS3XrEda38PolbT0"
-              alt="ATM Image"
-              style={{ width: "330px", height: "280px" }}
-            />
+           
           </div>
         </div>
       </div>
       {initUser()}
       <style jsx>{`
         body {
-          background-color: yellow;
+          background-color: black;
         }
         .container {
           text-align: center;
@@ -177,7 +170,7 @@ export default function HomePage() {
           color: white;
         }
         .a {
-          background-color: black;
+          background-color: blue;
           padding: 10px;
           margin: 20px;
         }
